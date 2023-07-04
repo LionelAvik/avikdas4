@@ -67,7 +67,7 @@ t_sq = np.zeros((file_no,freq_number,2))
 
 for i in range(file_no):
 
-	file1 = open("lightcurve_beta10_%d.txt" % i)
+	file1 = open("lightcurve_beta10_%d.txt" % i) # your simulated light curve text file!
 	lines = file1.readlines()
 	data1 = np.loadtxt(lines)
 
