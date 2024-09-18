@@ -9,7 +9,7 @@ df.columns = ["SP_500", "FTSE", "CAC40", "Nikkei"]
 delta_x = df.pct_change().dropna()
 #print(delta_x)
 
-mean = np.array([0,0,0,0]) #Mean of each market variable (assumed to be zero)
+mean = np.array([0,0,0,0]) #Mean value of each market variable (assumed to be zero)
 std = delta_x.std(ddof=0) #standard deviation each market variable
 #print(std)
 
@@ -21,7 +21,7 @@ covariance_matrix = correlation_matrix.mul(std, axis=0).mul(std, axis=1).to_nump
 
 current_portfolio_value = 10000 #Current value of the portfolio
 
-alpha = [4000, 3000, 1000, 2000] #amount invested on a given day for each variable
+alpha = [4000, 3000, 1000, 2000] #amount invested on a given day for each market variable
 
 #np.random.seed(42)
 sim_size = 10000
