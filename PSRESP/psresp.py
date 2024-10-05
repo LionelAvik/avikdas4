@@ -8,7 +8,8 @@ from multiprocessing import Pool
 import sys
 
 '''
-PSRESP method to model (Power Spectral Density) PSD with power-law type function (i.e., nu^(-beta) + P_noise; P_noise = Poisson noise)
+PSRESP method to model (Power Spectral Density) Blazar's (or other astrophysical sources with colored noise dominated light curves) PSD 
+with power-law type function (i.e., nu^(-beta) + P_noise; P_noise = Poisson noise)
 '''
 
 
